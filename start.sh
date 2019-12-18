@@ -33,7 +33,7 @@ yum-complete-transaction
 yum install -y tcl
 yum install -y expect
 yum install -y wget
-
+./test.sh
 phase_finished
 }
 install_java(){
