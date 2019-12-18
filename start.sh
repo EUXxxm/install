@@ -238,7 +238,7 @@ install_dlms() {
 echo -e "${yellow} WARNING:starting to install dlms?${plain}"
 cd $ins_dir
 tar -xzf $ins_dir/dlms.tar
-mv /opt/org.lowan.java -rf
+rm /opt/org.lowan.java -rf
 cp dlms /opt/org.lowan.java -rf
 sed -i 's/10.10.0.37/'$ip_addr'/g' /opt/org.lowan.java/dlms.service/conf/service.properties
 
